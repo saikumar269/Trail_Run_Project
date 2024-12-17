@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Assistant Bot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section with Gradient and Floating Text -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Your Smart Study Assistant</h1>
+            <p>Your ultimate learning companion</p>
+            <button onclick="scrollToChat()" class="cta-button">Start Chat</button>
+        </div>
+    </div>
+
+    <!-- Chatbot Container -->
+    <div class="chat-container" id="chat-container">
+        <div class="chat-header">
+            <h2>Smart Study Assistant</h2>
+        </div>
+        <div id="chat-box" class="chat-box"></div>
+        <div class="input-container">
+            <input type="text" id="user-input" class="user-input" placeholder="Ask me a question..." />
+            <button onclick="sendMessage()" class="send-button">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
