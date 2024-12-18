@@ -1,0 +1,19 @@
+version: "3.0"
+intents:
+  - greet
+  - goodbye
+  - ask_for_help
+  - request_study_material
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you with your studies today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day ahead!"
+
+  utter_ask_for_help:
+    - text: "Sure! What do you need help with?"
+
+  utter_provide_material:
+    - text: "Here are some study materials for Python. [Link to resources]"

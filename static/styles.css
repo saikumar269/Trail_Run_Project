@@ -1,0 +1,91 @@
+/* Basic styles for chatbot UI */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#chatbox-container {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+}
+
+#chatbox {
+    flex-grow: 1;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#chat-log {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#user_input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#send_btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#send_btn:hover {
+    background-color: #45a049;
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    padding: 8px 15px;
+    border-radius: 15px;
+    align-self: flex-start;
+    max-width: 80%;
+}
+
+.user-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 15px;
+    align-self: flex-end;
+    max-width: 80%;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    #chatbox-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #user_input {
+        font-size: 14px;
+    }
+
+    #send_btn {
+        font-size: 14px;
+    }
+}

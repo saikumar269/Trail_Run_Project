@@ -1,0 +1,17 @@
+nlu:
+- intent: greet
+  examples: |
+    - Hello
+    - Hi
+    - Hey there!
+
+- intent: ask_for_help
+  examples: |
+    - Can you help me with my studies?
+    - I need assistance with my homework.
+    - I need help!
+
+- intent: ask_for_material
+  examples: |
+    - Can you provide study materials for Python?
+    - I need notes on Java.
